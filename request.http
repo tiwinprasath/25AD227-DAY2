@@ -1,0 +1,30 @@
+### CREATE LIBRARY
+POST http://localhost:8080/api/library
+Content-Type: application/json
+
+{
+  "name": "Central Library",
+  "location": "Chennai"
+}
+
+
+### GET ALL LIBRARIES
+GET http://localhost:8080/api/library
+
+
+### GET LIBRARY BY ID
+GET http://localhost:8080/api/library/3
+
+
+### UPDATE LIBRARY
+PUT http://localhost:8080/api/library/3
+Content-Type: application/json
+
+{
+  "name": "Anna Nagar Library",
+  "location": "Anna Nagar"
+}
+
+
+### DELETE LIBRARY
+DELETE http://localhost:8080/api/library/3
